@@ -6,6 +6,7 @@
     <title>JV Designer</title>
     <link rel="icon" href="icon-02.ico" type="image/x-icon">
     <link href="contato_output.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -78,40 +79,43 @@
   <!-- Main -->
   
   
-  
-  
-  <main class="main-especialidades">
+
+
+    <form action="https://formsubmit.co/nogueirajav@gmail.com" method="POST" class="main-especialidades">
   
   
     <div class="flex flex-col gap-4">
       <label class="lab-form-email">Nome</label>
-      <input class="txt-form-email" type="text" placeholder="Escreva seu nome aqui">
+      <input id="campo-nome" class="txt-form-email" type="text" name="name" required placeholder="Escreva seu nome aqui">
     </div>
   
   
     <div class="flex flex-col gap-4">
       <label class="lab-form-email">Email</label>
-      <input class="txt-form-email" type="text" placeholder="Escreva seu email aqui">
+      <input id="campo-email" class="txt-form-email" type="email" name="email" required placeholder="Escreva seu email aqui">
     </div>
   
   
       <div class="flex flex-col gap-4">
       <label class="lab-form-email">Mensagem</label>
-      <textarea class="txt-form-email" type="text" placeholder="Escreva seu email aqui" rows="4"></textarea>
+      <textarea id="campo-msg" class="txt-form-email" type="text" name="message" required placeholder="Escreva seu email aqui" rows="4"></textarea>
     </div>
    
     <div class="flex">
-      <button class="btn-enviar-email">Enviar</button>
+      <button class="btn-enviar-email" type="submit" >Enviar</button>
     </div>
+
+    <input type="hidden" name="_subject" value="Novo envio!">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="_honey" style="display:none">
+  
+  </form>
   
   
   
   
   
-  
-  
-  
-  </main>
+
   
   
   
