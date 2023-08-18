@@ -38,3 +38,9 @@ window.addEventListener('resize', () => {
     }
 
   });
+
+  // Confirmacao email
+
+  document.getElementById('form-email').addEventListener('submit', function() {
+    alert('Email enviado com sucesso!');
+});
