@@ -89,7 +89,8 @@
     items-center
 
 
-
+    -translate-x-10
+    relative
 
 
 
@@ -130,10 +131,6 @@
    text-lg
    font-light
    text-gray-400
-
-
-
-
 
 
 
