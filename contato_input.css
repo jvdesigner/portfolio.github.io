@@ -1,0 +1,498 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@layer components {
+
+
+
+
+  .header{
+
+
+
+
+    @apply
+
+
+
+
+
+
+
+
+    flex
+    px-40
+    py-20
+    items-center
+    justify-between
+
+
+
+
+    /*max-lg:hover:items-start*/
+
+
+
+
+
+
+
+
+    transition-all
+   
+    max-xl:px-28
+    max-lg:px-20
+
+
+
+
+    max-md:items-start
+    max-md:bg-white/80
+    max-md:px-14
+   
+    max-sm:px-10
+
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+  .navbar{
+
+
+
+
+
+
+
+
+    @apply
+
+
+
+
+
+
+
+
+    items-center
+
+
+
+
+
+
+
+
+    transition-all
+
+
+
+
+
+
+
+
+    max-lg:hidden
+    max-lg:flex-col
+    max-lg:h-screen
+    max-lg:items-center
+    max-lg:justify-evenly
+
+
+
+
+    /*max-lg:group-hover/header:flex*/
+
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+  .links-navbar {
+
+
+
+
+
+
+
+
+   @apply
+   
+   text-lg
+   font-light
+   text-gray-400
+
+
+
+
+
+
+
+
+   transition-all
+
+
+
+
+
+
+
+
+   mx-4
+   
+   hover:text-blue-700
+     hover:font-semibold
+
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+  .icon-hamb{
+
+
+
+
+
+
+
+
+    @apply
+
+
+
+
+
+
+
+
+    w-6
+    h-1
+    bg-gray-400
+    rounded-xl
+
+
+
+
+    transition-all
+
+
+
+
+
+
+
+
+    group-hover/hamb:bg-blue-700
+
+
+
+
+
+
+
+
+  }
+
+
+
+
+  .main-especialidades{
+
+
+
+
+    @apply
+
+
+    flex
+    flex-col
+
+
+    gap-10
+
+
+    px-96
+    my-16
+
+
+
+
+
+
+
+
+    transition-all
+   
+    max-2xl:px-56
+    max-2xl:gap-9
+    max-2xl:my-14
+
+
+    max-xl:px-28
+    max-xl:my-12
+    max-xl:gap-8
+
+
+
+
+    max-lg:px-20
+    max-lg:my-10
+    max-lg:gap-7
+
+
+
+
+    max-md:px-14
+    max-md:my-8
+    max-md:gap-6
+   
+    max-sm:px-10
+    max-sm:my-2
+    max-sm:gap-5
+
+
+
+
+
+
+
+
+  }
+
+
+  .lab-form-email{
+
+
+    @apply
+
+
+   text-lg
+   font-semibold
+   text-gray-700
+
+
+   transition-all
+
+
+    max-2xl:text-lg
+
+
+    max-xl:text-base
+
+
+    max-lg:text-base
+
+
+    max-md:text-sm
+   
+    max-sm:text-sm
+ 
+  }
+
+
+  .txt-form-email{
+
+
+    @apply
+
+
+  text-lg
+   font-semibold
+   text-gray-700
+
+
+   border-gray-500
+
+
+   focus:border-blue-300
+   
+   border-2
+   outline-none
+   
+   p-4
+   
+   rounded-lg
+
+
+   transition-all
+
+
+    max-2xl:text-lg
+    max-2xl:p-4
+
+
+    max-xl:text-base
+    max-xl:p-3
+
+
+    max-lg:text-base
+    max-lg:p-2
+
+
+    max-md:text-sm
+
+
+   
+    max-sm:text-sm
+
+
+
+
+
+
+ 
+  }
+
+
+  .btn-enviar-email{
+
+
+    @apply
+
+
+    px-16
+    py-4
+   
+    bg-blue-500
+   
+    rounded-lg
+   
+    text-lg
+   
+    font-semibold
+   
+    text-white
+   
+    hover:scale-105
+   
+    transition-all
+
+
+
+
+    max-2xl:text-lg
+    max-2xl:px-16
+    max-2xl:py-4
+
+
+    max-xl:text-base
+    max-xl:px-16
+    max-xl:py-4
+
+
+    max-lg:text-base
+    max-lg:px-14
+
+
+
+
+    max-md:text-sm
+    max-md:px-12
+
+
+   
+    max-sm:text-sm
+    max-sm:px-10
+    max-sm:w-full
+
+
+
+
+
+
+  }
+
+
+
+
+/* FOOTER */
+
+
+  .icons-footer{
+
+
+
+
+
+
+
+
+    @apply
+
+
+
+
+
+
+
+
+    cursor-pointer
+   
+    fill-gray-200
+   
+    hover:fill-gray-500
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+

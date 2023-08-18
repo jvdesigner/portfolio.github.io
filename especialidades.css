@@ -1,0 +1,294 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+
+
+  .header{
+
+
+    @apply
+
+
+
+
+    flex
+    px-40
+    py-20
+    items-center
+    justify-between
+
+
+    /*max-lg:hover:items-start*/
+
+
+
+
+    transition-all
+   
+    max-xl:px-28
+    max-lg:px-20
+
+
+    max-md:items-start
+    max-md:bg-white/80
+    max-md:px-14
+   
+    max-sm:px-10
+
+
+
+
+  }
+
+
+
+
+  .navbar{
+
+
+
+
+    @apply
+
+
+
+
+    items-center
+
+
+
+
+    transition-all
+
+
+
+
+    max-lg:hidden
+    max-lg:flex-col
+    max-lg:h-screen
+    max-lg:items-center
+    max-lg:justify-evenly
+
+
+    /*max-lg:group-hover/header:flex*/
+
+
+
+
+  }
+
+
+
+
+  .links-navbar {
+
+
+
+
+   @apply
+   
+   text-lg
+   font-light
+   text-gray-400
+
+
+
+
+   transition-all
+
+
+
+
+   mx-4
+   
+   hover:text-blue-700
+     hover:font-semibold
+
+
+
+
+  }
+
+
+
+
+  .icon-hamb{
+
+
+
+
+    @apply
+
+
+
+
+    w-6
+    h-1
+    bg-gray-400
+    rounded-xl
+
+
+    transition-all
+
+
+
+
+    group-hover/hamb:bg-blue-700
+
+
+
+
+  }
+
+
+  .main-especialidades{
+
+
+    @apply
+
+
+    grid
+    grid-cols-3
+    grid-rows-2
+
+
+    gap-x-10
+    gap-y-20
+
+
+    px-40
+    my-28
+
+
+
+
+    transition-all
+   
+    max-xl:px-28
+    max-xl:my-24
+
+
+    max-lg:px-20
+    max-lg:grid-cols-1
+    max-lg:my-20
+
+
+    max-md:px-14
+    max-md:my-16
+   
+    max-sm:px-10
+    max-sm:my-12
+
+
+
+
+  }
+
+
+  .section-especialidade{
+
+
+    @apply
+
+
+    flex
+    flex-col
+
+
+    gap-8
+
+
+    hover:-translate-y-1
+
+
+    transition-all
+
+
+  }
+
+
+  .h2-especialidades{
+
+
+    @apply
+
+
+    text-2xl
+    text-gray-700
+    font-bold
+   
+
+
+
+
+    transition-all
+   
+   
+    max-xl:text-xl
+    max-lg:text-lg
+    max-md:text-base
+    max-sm:text-base
+
+
+  }
+
+
+  .p-especialidades{
+
+
+    @apply
+
+
+    text-xl
+    text-gray-600
+
+
+    transition-all
+
+
+    max-xl:text-lg
+
+
+    max-lg:text-base
+
+
+    max-md:text-sm
+
+
+    max-sm:text-xs
+
+
+
+
+  }
+
+
+      .icons-footer{
+
+
+
+
+    @apply
+
+
+
+
+    cursor-pointer
+   
+    fill-gray-200
+   
+    hover:fill-gray-500
+
+
+
+
+    }
+
+
+
+
+}
+
