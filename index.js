@@ -42,5 +42,16 @@ window.addEventListener('resize', () => {
   // Confirmacao email
 
   document.getElementById('form-email').addEventListener('submit' ,() => {
-    alert('Email enviado com sucesso!');
+    
+    const vModal = document.getElementById('modal-email');
+
+    vModal.style.display = 'flex';
+
+    setTimeout(function() {
+        vModal.style.display = 'none';
+      }, 2000);
+
+
 });
+
+
