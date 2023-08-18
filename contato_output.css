@@ -556,6 +556,7 @@ video {
 
 @media not all and (min-width: 1024px) {
   .header {
+    align-items: flex-start;
     padding-left: 5rem;
     padding-right: 5rem;
   }
@@ -563,7 +564,6 @@ video {
 
 @media not all and (min-width: 768px) {
   .header {
-    align-items: flex-start;
     background-color: rgb(255 255 255 / 0.8);
     padding-left: 3.5rem;
     padding-right: 3.5rem;
@@ -910,6 +910,10 @@ video {
   cursor: pointer;
 }
 
+.resize {
+  resize: both;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -955,10 +959,6 @@ video {
 .text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
-}
-
-.outline {
-  outline-style: solid;
 }
 
 .transition-all {

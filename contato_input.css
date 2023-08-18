@@ -15,6 +15,10 @@
 
 
 
+
+
+
+
     @apply
 
 
@@ -33,24 +37,12 @@
 
 
 
-    /*max-lg:hover:items-start*/
-
-
-
-
-
-
-
-
     transition-all
    
     max-xl:px-28
     max-lg:px-20
 
-
-
-
-    max-md:items-start
+    max-lg:items-start
     max-md:bg-white/80
     max-md:px-14
    
@@ -64,6 +56,14 @@
 
 
   }
+
+
+
+
+
+
+
+
 
 
 
@@ -86,13 +86,7 @@
 
 
 
-
-
-
-
     items-center
-
-
 
 
 
@@ -102,11 +96,7 @@
     transition-all
 
 
-
-
-
-
-
+    
 
     max-lg:hidden
     max-lg:flex-col
@@ -117,17 +107,8 @@
 
 
 
-    /*max-lg:group-hover/header:flex*/
-
-
-
-
-
-
-
 
   }
-
 
 
 
