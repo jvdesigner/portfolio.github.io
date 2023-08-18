@@ -41,6 +41,6 @@ window.addEventListener('resize', () => {
 
   // Confirmacao email
 
-  document.getElementById('form-email').addEventListener('submit', function() {
+  document.getElementById('form-email').addEventListener('submit' ,() => {
     alert('Email enviado com sucesso!');
 });
