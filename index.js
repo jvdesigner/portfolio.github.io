@@ -49,7 +49,7 @@ window.addEventListener('resize', () => {
 
     setTimeout(function() {
         vModal.style.display = 'none';
-      }, 2000);
+      }, 4000);
 
 
 });
