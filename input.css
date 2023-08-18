@@ -1,3 +1,992 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+@layer components {
+
+
+
+
+
+
+
+
+  .header{
+
+
+
+
+
+
+
+
+    @apply
+
+
+
+
+
+
+
+
+    flex
+    px-40
+    py-20
+    items-center
+    justify-between
+
+
+    /*max-lg:hover:items-start*/
+
+
+
+
+    transition-all
+   
+    max-xl:px-28
+    max-lg:px-20
+
+
+
+
+
+
+
+
+    max-lg:items-start
+    max-md:bg-white/80
+    max-md:px-14
+   
+    max-sm:px-10
+
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .navbar{
+
+
+
+
+
+
+
+
+    @apply
+
+
+
+
+
+
+
+
+    items-center
+
+
+
+
+
+
+
+
+    transition-all
+
+
+
+
+
+
+    
+
+    max-lg:hidden
+    max-lg:flex-col
+    max-lg:h-screen
+    max-lg:items-center
+    max-lg:justify-evenly
+
+
+    /*max-lg:group-hover/header:flex*/
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .links-navbar {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   @apply
+   
+   text-lg
+   font-light
+   text-gray-400
+
+
+
+
+
+
+
+
+   transition-all
+
+
+
+
+
+
+
+
+   mx-4
+   
+   hover:text-blue-700
+     hover:font-semibold
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+  .icon-hamb{
+
+
+
+
+
+
+
+
+    @apply
+
+
+
+
+
+
+
+
+    w-6
+    h-1
+    bg-gray-400
+    rounded-xl
+
+
+
+
+
+
+
+
+    transition-all
+
+
+
+
+
+
+
+
+    group-hover/hamb:bg-blue-700
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+  .div-headline-pai{
+
+
+
+
+
+
+
+
+    @apply
+
+
+
+
+
+
+
+
+    flex
+    flex-col
+    justify-center
+    items-center
+   
+
+
+
+
+    transition-all
+
+
+
+
+
+
+
+
+    gap-6
+    px-80
+    py-20
+   
+    max-xl:px-40
+    max-xl:py-12
+   
+    max-lg:px-20
+    max-lg:py-10
+   
+    max-md:px-14
+    max-md:pb-4
+    max-md:pt-2
+   
+    max-sm:px-10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+  .h2-headline{
+
+
+
+
+
+
+
+
+    @apply
+
+
+
+
+
+
+
+
+    text-5xl
+    text-center
+    text-gray-700
+    font-bold
+   
+
+
+
+
+    transition-all
+   
+   
+    max-xl:text-4xl
+    max-lg:text-3xl
+    max-md:text-2xl
+    max-sm:text-xl
+
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+  .p1-headline{
+
+
+
+
+
+
+
+
+    @apply
+
+
+
+
+
+
+
+
+    text-2xl
+    text-blue-300
+    text-center
+    italic
+
+
+
+
+
+
+
+
+    transition-all
+   
+    max-xl:text-lg
+    max-lg:text-base
+    max-md:text-sm
+    max-sm:text-xs
+
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+  .p2-headline{
+
+
+
+
+
+
+
+
+    @apply
+
+
+
+
+
+
+
+
+    text-2xl
+    text-gray-600
+    text-center
+    px-28
+
+
+
+
+    transition-all
+
+
+
+
+    max-2xl:px-24
+
+
+
+
+    max-xl:px-20
+    max-xl:text-lg
+
+
+
+
+    max-lg:text-base
+    max-lg:px-16
+
+
+
+
+    max-md:text-sm
+    max-md:px-12
+
+
+
+
+    max-sm:text-xs
+    max-sm:px-0
+
+
+
+
+   
+   
+   
+   
+   
+
+
+
+
+
+
+
+
+  }
+
+
+
+
+  .section-trabalhos{
+
+
+
+
+
+
+
+
+    @apply
+
+
+
+
+
+
+
+
+    grid
+    grid-cols-2
+    grid-rows-2
+   
+
+
+
+
+    transition-all
+
+
+
+
+    gap-10
+    px-40
+    py-16
+   
+    max-xl:px-28
+
+
+
+
+    max-lg:px-20
+    max-lg:flex
+    max-lg:flex-col
+
+
+
+
+    max-md:px-14
+    max-sm:px-10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+
+
+
+
+  .article-trabalhos{
+
+
+
+
+    @apply
+    flex
+    bg-gradient-to-br
+    from-green-100
+    justify-center
+    items-center
+    rounded-3xl
+    shadow-lg
+    cursor-pointer
+    overflow-hidden
+
+
+
+
+    relative
+
+
+
+
+    transition-all
+ 
+  }
+
+
+
+
+  .img-trabalhos{
+
+
+
+
+    @apply
+
+
+
+
+    bg-center
+    bg-cover
+   
+   
+    group-hover/mockup:scale-110
+    group-hover/mockup:blur-sm
+   
+    transition-all
+    duration-500
+
+
+
+
+    max-lg:group-hover/mockup:blur-none
+ 
+  }
+
+
+
+
+  .div-text-trabalhos{
+
+
+
+
+    @apply
+
+
+
+
+    w-full
+    h-full
+   
+    hidden
+   
+    justify-center
+    items-center
+   
+    flex-col
+    gap-9
+   
+    px-12
+   
+    group-hover/mockup:flex
+   
+    bg-gray-900/50
+   
+    absolute
+    top-0
+   
+    rounded-3xl
+   
+    transition-all
+    duration-500
+
+
+
+
+    max-lg:group-hover/mockup:hidden
+   
+
+
+
+
+ 
+  }
+
+
+
+
+
+
+
+
+  .div-text-01-trabalhos{
+
+
+
+
+    @apply
+
+
+
+
+  text-4xl
+  text-center
+ 
+  font-semibold
+ 
+  text-gray-100
+ 
+  transition-all
+  duration-500
+
+
+
+
+  max-2xl:text-3xl
+  max-xl:text-2xl
+ 
+  }
+
+
+
+
+.div-text-02-trabalhos{
+
+
+
+
+    @apply
+
+
+
+
+    text-xl
+    text-center
+    text-gray-100
+   
+    transition-all
+    duration-500
+
+
+
+
+    max-2xl:text-lg
+    max-xl:text-base
+ 
+  }
+
+
+
+
+  .div-text-abaixo{
+
+
+
+
+    @apply
+
+
+
+
+    hidden
+   
+    flex-col
+   
+    gap-10
+   
+    pb-24
+    pt-4
+   
+    justify-around
+   
+    max-lg:flex
+
+
+
+
+    max-md:pb-20
+    max-md:pt-2
+    max-md:gap-8
+
+
+
+
+
+
+
+
+    max-sm:pb-16
+    max-sm:gap-6
+
+
+
+
+
+
+
+
+  }
+
+
+
+
+  .div-text-01-abaixo{
+
+
+
+
+    @apply
+
+
+
+
+    text-4xl
+    text-center
+   
+    font-semibold
+   
+    text-gray-700
+
+
+
+
+    max-lg:text-3xl
+    max-md:text-2xl
+    max-sm:text-lg
+
+
+
+
+
+
+
+
+  }
+
+
+
+
+  .div-text-02-abaixo{
+
+
+
+
+    @apply
+
+
+
+
+    text-xl
+    text-center
+    text-gray-500
+
+
+
+
+    max-lg:text-lg
+    max-md:text-base
+    max-sm:text-xs
+
+
+
+
+
+
+
+
+  }
+
+
+
+
+    .icons-footer{
+
+
+
+
+    @apply
+
+
+
+
+    cursor-pointer
+   
+    fill-gray-200
+   
+    hover:fill-gray-500
+
+
+
+
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
