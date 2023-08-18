@@ -4,6 +4,8 @@
 
 
 
+
+
 @layer components {
 
 
@@ -36,9 +38,6 @@
     py-20
     items-center
     justify-between
-
-
-    /*max-lg:hover:items-start*/
 
 
 
@@ -128,8 +127,6 @@
     max-lg:justify-evenly
 
 
-    /*max-lg:group-hover/header:flex*/
-
 
 
 
@@ -172,8 +169,6 @@
    text-lg
    font-light
    text-gray-400
-
-
 
 
 

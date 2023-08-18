@@ -957,6 +957,10 @@ video {
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
+.outline {
+  outline-style: solid;
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
