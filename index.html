@@ -6,6 +6,9 @@
     <title>JV Designer</title>
     <link rel="icon" href="icon-02.ico" type="image/x-icon">
     <link href="output.css" rel="stylesheet">
+    <link href="animacoes.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 </head>
 <body>
@@ -52,7 +55,7 @@
   
   
   
-  <div class="div-headline-pai">
+  <div class="div-headline-pai animate__animated _element3">
   
   
   
@@ -94,12 +97,12 @@
   
   
   
-  <section class="section-trabalhos">
+  <section class="section-trabalhos animate__animated _element3">
   
   
   
   
-    <a href="sol_nascente.html"><article class="article-trabalhos group/mockup">
+    <a href="sol_nascente.html" class="floating"><article class="article-trabalhos group/mockup">
   
   
   
@@ -146,7 +149,7 @@
   
   
   
-    <article class="article-trabalhos group/mockup overflow-hidden" style="background: linear-gradient(135deg, #FFD350 0%, #FFCA2C 0.01%, #FFE597 50.52%, #FFE597 55.21%, #FFF 100%);
+    <a href="#" class="floating2"><article class="article-trabalhos group/mockup overflow-hidden" style="background: linear-gradient(135deg, #FFD350 0%, #FFCA2C 0.01%, #FFE597 50.52%, #FFE597 55.21%, #FFF 100%);
   ">
   
   
@@ -175,7 +178,8 @@
   
   
   
-    </article>
+    </article></a>
+
       <div class="div-text-abaixo">
      
         <p class="div-text-01-abaixo">Aplicativo de gerenciamentos de jogos</p>
@@ -191,9 +195,7 @@
   
   
   
-    <article class="article-trabalhos group/mockup" style="background: linear-gradient(135deg, #4A929C 0%, #FFF 100%);
-  ">
-  
+    <a href="#" class="article-trabalhos group/mockup floating" style="background: linear-gradient(135deg, #4A929C 0%, #FFF 100%);">
   
   
   
@@ -220,7 +222,7 @@
   
   
   
-    </article>
+</a>
   
   
   
@@ -239,7 +241,7 @@
   
   
   
-    <article class="article-trabalhos group/mockup" style="background: linear-gradient(136deg, #3A38AA 0%, #C2C0FF 100%);
+    <a href="#" class="floating2"><article class="article-trabalhos group/mockup" style="background: linear-gradient(136deg, #3A38AA 0%, #C2C0FF 100%);
   ">
   
   
@@ -268,7 +270,7 @@
   
   
   
-    </article>
+    </article></a>
   
   
   
@@ -336,7 +338,68 @@
   </footer>
   
   
-  
+  <script>
+
+    // left
+
+    const elements = document.querySelectorAll('._element');
+    
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate__fadeInLeft');
+          entry.target.classList.remove('animate__fadeOutLeft');
+        } else {
+          entry.target.classList.remove('animate__fadeInLeft');
+          entry.target.classList.add('animate__fadeOutLeft');
+        }
+      });
+    });
+    
+    elements.forEach(_element => {
+      observer.observe(_element);
+    });
+
+    // right
+
+    const elements2 = document.querySelectorAll('._element2');
+    
+    const observer2 = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate__fadeInRight');
+          entry.target.classList.remove('animate__fadeOutRight');
+        } else {
+          entry.target.classList.remove('animate__fadeInRight');
+          entry.target.classList.add('animate__fadeOutRight');
+        }
+      });
+    });
+    
+    elements2.forEach(_element => {
+      observer2.observe(_element);
+    });
+
+    // up
+
+    const elements3 = document.querySelectorAll('._element3');
+    
+    const observer3 = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate__fadeInUp');
+          entry.target.classList.remove('animate__fadeOutRight');
+          
+        } 
+      });
+    });
+    
+    elements3.forEach(_element => {
+      observer3.observe(_element);
+    });
+
+    
+        </script>
     <script src="index.js"></script>
 </body>
 </html>

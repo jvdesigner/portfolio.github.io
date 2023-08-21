@@ -1,0 +1,30 @@
+.floating {
+
+    animation: floatAnimation 2s ease-in-out infinite;
+  }
+
+  .floating:hover,.floating2:hover{animation:none}
+
+  .floating2 {
+    animation: floatAnimation2 2s ease-in-out infinite;
+  }
+
+  .floating2:hover{animation:none}
+
+  @keyframes floatAnimation {
+    0%, 100% {
+      transform: translateY(5px);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+
+  @keyframes floatAnimation2 {
+    0%, 100% {
+      transform: translateY(-5px);
+    }
+    50% {
+      transform: translateY(5px);
+    }
+  }
