@@ -584,10 +584,10 @@
   <article class="flex | flex-col | space-y-20 | transition-all >> >> max-2xl:space-y-16 | max-xl:space-y-14 | max-lg:space-y-12 | max-md:space-y-11 | max-sm:space-y-10 ">
 
 
-      <h3 class="animate__animated _element text-2xl | text-justify | text-gray-500  | transition-all >> max-2xl:text-xl | max-xl:text-lg | max-lg:text-base | max-md:text-base | max-sm:text-sm">Ultilizamos o diamante duplo no projeto para estruturar a abordagem, garantindo uma compreensão profunda do problema e das necessidades dos usuários (<strong>Descoberta</strong>), definindo claramente os objetivos (<strong>Definição</strong>), desenvolvendo soluções eficazes (<strong>Desenvolvimento</strong>) e entregando uma experiência otimizada (<strong>Entrega</strong>). Isso assegura a qualidade do design centrado no usuário.</h3>
+      <h3 class="animate__animated _element4 text-2xl | text-justify | text-gray-500  | transition-all >> max-2xl:text-xl | max-xl:text-lg | max-lg:text-base | max-md:text-base | max-sm:text-sm">Ultilizamos o diamante duplo no projeto para estruturar a abordagem, garantindo uma compreensão profunda do problema e das necessidades dos usuários (<strong>Descoberta</strong>), definindo claramente os objetivos (<strong>Definição</strong>), desenvolvendo soluções eficazes (<strong>Desenvolvimento</strong>) e entregando uma experiência otimizada (<strong>Entrega</strong>). Isso assegura a qualidade do design centrado no usuário.</h3>
 
 
-      <a class="animate__animated _element2" href="https://i.ibb.co/myhN7FX/Group-604.png" target="_blank"><img class="transition-all " src="https://i.ibb.co/vsy3HRZ/Group-604.png" alt=""></a>
+      <a class="animate__animated _element4" href="https://i.ibb.co/myhN7FX/Group-604.png" target="_blank"><img class="transition-all " src="https://i.ibb.co/vsy3HRZ/Group-604.png" alt=""></a>
 
 
   </article>
@@ -612,7 +612,7 @@
 
   <article class=" | transition-all | space-y-24 >> max-2xl:space-y-20 | max-xl:space-y-16 | max-lg:space-y-14 | max-md:space-y-12 | max-sm:space-y-10">
 
-    <div class="flex | items-center |  | space-x-10 | transition-all >> max-2xl:space-x-9 | max-xl:space-x-8 | max-lg:space-x-0 max-lg:flex max-lg:flex-col max-lg:gap-10 | max-md:gap-9 | max-sm:gap-8">
+    <div class="animate__animated _element flex | items-center |  | space-x-10 | transition-all >> max-2xl:space-x-9 | max-xl:space-x-8 | max-lg:space-x-0 max-lg:flex max-lg:flex-col max-lg:gap-10 | max-md:gap-9 | max-sm:gap-8">
 
       <div class="basis-1/2 | text-center |  | space-y-10 | transition-all >> max-2xl:space-y-9 | max-xl:space-y-8 | max-lg:space-y-7 | max-md:space-y-6 | max-sm:space-y-5">
 
@@ -626,7 +626,7 @@
 
     </div>
 
-    <div class="flex | items-center |  | space-x-10 | transition-all >> max-2xl:space-x-9 | max-xl:space-x-8 | max-lg:space-x-0 max-lg:flex max-lg:flex-col max-lg:gap-10 | max-md:gap-9 | max-sm:gap-8">
+    <div class="animate__animated _element2 flex | items-center |  | space-x-10 | transition-all >> max-2xl:space-x-9 | max-xl:space-x-8 | max-lg:space-x-0 max-lg:flex max-lg:flex-col max-lg:gap-10 | max-md:gap-9 | max-sm:gap-8">
 
       <div class="basis-1/2 | text-center |  | space-y-10 | transition-all >> max-2xl:space-y-9 | max-xl:space-y-8 | max-lg:space-y-7 | max-md:space-y-6 | max-sm:space-y-5">
 
@@ -640,7 +640,7 @@
 
     </div>
 
-    <div class="flex | items-center |  | space-x-10 | transition-all >> max-2xl:space-x-9 | max-xl:space-x-8 | max-lg:space-x-0 max-lg:flex max-lg:flex-col max-lg:gap-10 | max-md:gap-9 | max-sm:gap-8">
+    <div class="animate__animated _element flex | items-center |  | space-x-10 | transition-all >> max-2xl:space-x-9 | max-xl:space-x-8 | max-lg:space-x-0 max-lg:flex max-lg:flex-col max-lg:gap-10 | max-md:gap-9 | max-sm:gap-8">
 
       <div class="basis-1/2 | text-center |  | space-y-10 | transition-all >> max-2xl:space-y-9 | max-xl:space-y-8 | max-lg:space-y-7 | max-md:space-y-6 | max-sm:space-y-5">
 
@@ -1004,6 +1004,27 @@
     
     elements3.forEach(_element => {
       observer3.observe(_element);
+    });
+
+    // up
+
+    const elements4 = document.querySelectorAll('._element4');
+    
+    const observer4 = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate__fadeIn');
+          entry.target.classList.remove('animate__fadeOut');
+          
+        } else {
+          entry.target.classList.remove('animate__fadeIn');
+          entry.target.classList.add('animate__fadeOut');
+        }
+      });
+    });
+    
+    elements4.forEach(_element => {
+      observer4.observe(_element);
     });
 
     
